@@ -1,21 +1,115 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(15, 25%, 94%); /* Beige background */
+    color: rgb(5, 176, 162); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(5, 176, 162); 
+    color: white;
+}
+
+button {
+    background-color: #FFFFFF; /* White background */
+    color: rgb(5, 176, 162); 
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(5, 176, 162); 
+    color: #FFFFFF; /* White text on hover */
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
 }
 
 .image-item img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    max-height: 1024px;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* White background */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: rgb(5, 176, 162); 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 4px 0;
+    background: #F5F5DC; /* Beige background */
+    color: rgb(5, 176, 162); 
+    border-radius: 4px;
+}
+
+li:hover {
+    background: rgb(5, 176, 162); 
+    color: #FFFFFF; /* White text on hover */
 }
