@@ -1,3 +1,13 @@
+/**
+ * `src/actions/index.js`
+ * 
+ * This file contains Redux action creators for fetching images from the backend server and 
+ * setting the category for image search. It includes actions for successfully fetching images,
+ * handling fetch failures, and setting the image category. The fetchImages action creator 
+ * makes an API call to the backend server to retrieve images based on the specified category 
+ * and page number.
+ */
+
 import axios from 'axios';
 
 export const FETCH_IMAGES_SUCCESS = 'FETCH_IMAGES_SUCCESS';

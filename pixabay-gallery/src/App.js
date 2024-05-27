@@ -1,9 +1,24 @@
+
+/**
+ * `src/App.js`
+ * 
+ * This file is the main component of the React application. It renders the interface for browsing 
+ * and searching images from Pixabay. The component includes:
+ * - A header with navigation buttons and a search bar.
+ * - A gallery that displays images fetched from the Pixabay API.
+ * - Modals for selecting image categories and viewing image details.
+ * 
+ * The component uses Redux for state management, fetching images based on selected categories 
+ * or search terms, and handling pagination. It includes functionality for opening and closing 
+ * modals and handling user interactions with images.
+ */
+
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchImages, setCategory } from './actions';
 import './App.css';
 
-const categories = ['animals', 'nature', 'sports', 'technology', 'people', 'food', 'travel', 'architecture', 'business']; // Add more categories as needed
+const categories = ['animals', 'nature', 'sports', 'technology', 'people', 'food', 'travel', 'architecture', 'business','fashion', 'iphone wallpaper', 'woman'];
 
 const App = () => {
     const dispatch = useDispatch();
@@ -50,6 +65,8 @@ const App = () => {
         setIsImageModalOpen(false);
     };
 
+    
+
     return (
         <div className="App">
             <header>
@@ -92,5 +109,7 @@ const App = () => {
         </div>
     );
 };
+
+
 
 export default App;
