@@ -1,6 +1,7 @@
 # Pixabay Image Gallery
 
 check out the project here:
+
 ```https://youtu.be/fxoA11-AF5M```
 
 This project is a full-stack web application that allows users to search for and view images from the Pixabay API. The application is built with React for the frontend and Node.js with Express for the backend. Users can browse images by category, search for specific keywords, and view detailed information about each image.
@@ -18,22 +19,34 @@ This project is a full-stack web application that allows users to search for and
 
 # Installation
 ```git clone https://github.com/yourusername/pixabay-gallery.git```
+
 ```cd pixabay-gallery```
+
 ```cd pixabay-backend```
+
 ```npm install```
+
 ```cd ../pixabay-gallery```
+
 ```npm install```
+
 Create a .env file in the pixabay-backend directory with the following content:
 ```PIXABAY_API_KEY=your_pixabay_api_key_here```
 
 # Usage
 1. Satrt the backend server:
+   
 ```cd pixabay-backend```
+
 ```node index.js```
-2. Start the frontend development server:
+
+3. Start the frontend development server:
+   
 ```cd ../pixabay-gallery```
+
 ```npm start```
-3. Open your browser and navigate to: http://localhost:3000
+
+5. Open your browser and navigate to: http://localhost:3000
 
 # Project Structure
 ```
