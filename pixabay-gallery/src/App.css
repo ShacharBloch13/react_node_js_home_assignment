@@ -53,6 +53,7 @@ button:hover {
     max-height: 1024px;
     object-fit: cover;
     border-radius: 10px; /* Rounded corners for images */
+    cursor: pointer;
 }
 
 /* Modal styles */
@@ -112,4 +113,17 @@ li {
 li:hover {
     background: rgb(5, 176, 162); 
     color: #FFFFFF; /* White text on hover */
+}
+
+/* Styles for the image details modal */
+.modal-content p {
+    margin: 10px 0;
+    color: rgb(5, 176, 162); 
+    font-weight: 500;
+}
+
+.modal-content h2 {
+    color: rgb(5, 176, 162); 
+    font-weight: 600;
+    margin-bottom: 20px;
 }
